@@ -1,16 +1,115 @@
-# todoey
+# 📝 Todoey – Flutter To-Do App
 
-A new Flutter project.
+A simple and clean **To-Do application built with Flutter**, using **Provider** for state management.  
+This project demonstrates best practices for separating UI and logic, managing app state, and building reusable widgets.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📱 Features
 
-A few resources to get you started if this is your first Flutter project:
+- ✅ Add new tasks  
+- ☑️ Mark tasks as completed  
+- 🗑️ Delete tasks with a long press  
+- 🔄 Real-time UI updates using **Provider**  
+- 📦 Clean architecture (Models, Screens, Widgets)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🎥 App Preview
+
+<p align="center">
+  <img src="screen_record/1.gif" width="250"/>
+</p>
+
+---
+
+## 🧠 State Management
+
+This app uses **Provider** with `ChangeNotifier` to manage tasks:
+
+- `TaskData` handles:
+  - Task list
+  - Add / update / delete operations
+  - Notifying listeners when data changes
+
+---
+
+## 🗂️ Project Structure
+
+```text
+lib/
+│
+├── models/
+│   ├── task.dart
+│   └── task_data.dart
+│
+├── screens/
+│   ├── tasks_screen.dart
+│   └── add_task_screen.dart
+│
+├── widgets/
+│   ├── task_tile.dart
+│   └── tasks_list.dart
+│
+└── main.dart
+````
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+* Flutter SDK
+* Dart
+* Android Studio / VS Code
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+flutter pub get
+flutter run
+```
+
+---
+
+## 📦 Dependencies
+
+```yaml
+provider: ^6.0.0
+```
+
+---
+
+## 🛠️ Built With
+
+* **Flutter**
+* **Dart**
+* **Provider**
+* **Material Design**
+
+---
+
+## 🎯 What I Learned
+
+* Using `ChangeNotifier` and `Consumer`
+* State management with Provider
+* Widget separation and clean architecture
+* Handling user input and UI updates efficiently
+
+---
+
+## 👤 Author
+
+**Ghofrane BM**
+🎓 Student
+📍 Tunisia
+
+
+---
+
+## ⭐️ Support
+
+If you like this project, consider giving it a ⭐️ on GitHub!
