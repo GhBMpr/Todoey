@@ -67,8 +67,8 @@ lib/
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/GhBMpr/Todoey.git
+cd Todoey
 flutter pub get
 flutter run
 ```
